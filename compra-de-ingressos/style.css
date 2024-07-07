@@ -5,3 +5,13 @@
 .paragrafos {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+.filmes-em-cartaz {
+    list-style-image: url('./imagens/icone-filme.png');
+}
+
+.escolha-seu-filme :hover {
+    background-color:deepskyblue;
+    color: white;
+    
+}
