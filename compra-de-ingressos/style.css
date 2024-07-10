@@ -1,17 +1,121 @@
-.catalogo-filmes {
+body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.paragrafos {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+body {
+    background-image: url(./imagens/fundo-preto-cinema.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
 }
-
 .filmes-em-cartaz {
+
     list-style-image: url('./imagens/icone-filme.png');
+
 }
 
 .escolha-seu-filme :hover {
+
     background-color:deepskyblue;
     color: white;
     
+}
+
+.horarios div{
+    
+    background: rgba(173, 110, 110, 0);
+    display: inline-block;
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    border-color: white;
+    border-width: 3px;
+    border-style: solid;
+     
+}
+
+.horarios div:hover {
+    
+    background-color: rgba(0, 0, 0, 0.144);
+    border-color: aqua;
+    border-width: 3px;
+    border-style: solid;
+
+}
+
+.ingressos div {
+    
+    background: rgba(173, 110, 110, 0);
+    display: inline-block;
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    border-color: white;
+    border-width: 3px;
+    border-style: solid;
+
+} 
+
+.ingressos div:hover {
+
+    background-color: rgba(0, 0, 0, 0.144);
+    border-color: aqua;
+    border-width: 3px;
+    border-style: solid;
+
+}
+
+.pagamento div {
+
+    background: rgba(173, 110, 110, 0);
+    display: inline-block;
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    border-color: white;
+    border-width: 3px;
+    border-style: solid;
+
+}
+
+.pagamento div:hover {
+
+    background-color: rgba(0, 0, 0, 0.144);
+    border-color: aqua;
+    border-width: 3px;
+    border-style: solid;
+
+}
+
+.botao-centralizar {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.botao-finalizar {
+
+    background: rgb(55, 5, 112);
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    border-color: white;
+    border-width: 3px;
+    border-style: solid;
+    
+}
+
+.botao-finalizar:hover {
+
+    transform: scale(0.95);
+    transition: 0.2s;
+    cursor: pointer;
+
 }

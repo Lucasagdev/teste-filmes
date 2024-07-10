@@ -46,71 +46,120 @@
     <h3 class="paragrafos">Horaios disponíveis:</h3>
 
     <div class="horarios">
-    <label for="12:00h">12:00h</label>
-    <input id="12:00h" type="radio" name="seções"> <br><br>
+    
+        <div>
 
-    <label for="14:00h">14:00h</label>
-    <input id="14:00h" type="radio" name="seções"> <br><br>
+        <label for="12:00h">12:00h</label>
+        <input id="12:00h" type="radio" name="seções">
 
-    <label for="16:00h">16:00h</label>
-    <input id="16:00h" type="radio" name="seções"> <br><br>
+        </div>
+        
+        <div>
 
-    <label for="18:00h">18:00h</label>
-    <input id="18:00h" type="radio" name="seções"> <br><br>
+        <label for="14:00h">14:00h</label>
+        <input id="14:00h" type="radio" name="seções">
+
+        </div>
+        
+        <div>
+
+        <label for="16:00h">16:00h</label>
+        <input id="16:00h" type="radio" name="seções">
+
+        </div>
+        
+        <div>
+
+        <label for="18:00h">18:00h</label>
+        <input id="18:00h" type="radio" name="seções">
+
+        </div>
+    
     </div>
 
     <h3 class="paragrafos">Ingressos</h3>
 
-    <label>Inteiras</label>
-    <select name="meia">
+    <div class="ingressos">
 
-        <option value="0">0</option>
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="6">6</option>
-        <option value="7">7</option>
-        <option value="8">8</option>
-        <option value="9">9</option>
-        <option value="10">10</option>
-
-
-    </select>
-
-    <br><br>
-
-    <label>Meias</label>
-    <select name="meia">
-
-        <option value="0">0</option>
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="6">6</option>
-        <option value="7">7</option>
-        <option value="8">8</option>
-        <option value="9">9</option>
-        <option value="10">10</option>
-
-
-    </select>
+        <div>
+            
+            <label class="inteiras">Inteiras</label>
+            <select name="meia">
+                
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                
+                
+            </select>
+            
+        </div>
+        
+        
+        <div>
+            
+            <label>Meias</label>
+            <select name="meia">
+                
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                
+                
+            </select>
+            
+        </div>
+        
+    </div>
 
     <h3 class="paragrafos">Formas de Pagamento</h3>
 
-    <label for="pix">Pix</label>
-    <input id="pix" type="radio" name="pagamento"> <br><br>
+    <div class="pagamento">
 
-    <label for="debito">Debito</label>
-    <input id="Debito" type="radio" name="pagamento"> <br><br>
+        <div>
 
-    <label for="Credito">Credito</label>
-    <input id="Credito" type="radio" name="pagamento"> <br><br>
+            <label for="pix">Pix</label>
+            <input id="pix" type="radio" name="pagamento">
+            
+        </div>
 
-    <input type="button" value="Finalizar compra" onclick="alert('Sua compra foi finalizada com sucesso')">
+        <div>
+
+            <label for="debito">Debito</label>
+            <input id="Debito" type="radio" name="pagamento">
+            
+        </div>
+
+        <div>
+
+            <label for="Credito">Credito</label>
+            <input id="Credito" type="radio" name="pagamento">
+            
+        </div>
+
+    </div>
+    
+    <div class="botao-centralizar">
+
+        <input class="botao-finalizar" type="button" value="Finalizar compra" onclick="alert('Sua compra foi finalizada com sucesso')">
+        
+    </div>
 
 </body>
 </html>
