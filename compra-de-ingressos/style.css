@@ -16,82 +16,78 @@ body {
 
 }
 
-.horarios div{
-    
+.estilo-caixas div {
+
     background: #0b0b0c;
     display: inline-block;
     color: white;
-    padding: 20px;
+    padding: 13px;
     margin: 20px;
-    border-radius: 15px;
+    border-radius: 20px;
     border-color: #252529;
     border-width: 3px;
     border-style: solid;
-     
+    
 }
 
-.horarios div:hover {
-    
-    background-color: #0b0b0c;
-    border-color: rgb(8, 138, 182);
-    border-width: 3px;
-    border-style: solid;
-    transform: scale(0.97);
-    transition: 0.2s;
-    cursor: pointer;
-
-}
-
-.ingressos div {
-    
-    background: #0b0b0c;
-    display: inline-block;
-    color: white;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 15px;
-    border-color: #252529;
-    border-width: 3px;
-    border-style: solid;
-
-} 
-
-.ingressos div:hover {
+.estilo-caixas div:hover {
 
     background-color: #0b0b0c;
     border-color: rgb(8, 138, 182);
     border-width: 3px;
     border-style: solid;
-    transform: scale(0.97);
+    transform: scale(0.95);
     transition: 0.2s;
     cursor: pointer;
 
 }
 
-.pagamento div {
-
+.select-filmes {
+    
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0;
     background: #0b0b0c;
-    display: inline-block;
+    background-image: none;
+    font-size: 15px;
+    
+}
+
+.select-filmes {
+    
+    flex: 1;
+    padding: 10px;
     color: white;
-    padding: 20px;
-    margin: 20px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.escolha-seu-filme {
+    
+    position: relative;
+    display: flex;
+    width: 400px;
+    height: 50px;
+    background: #0b0b0c;
     border-radius: 15px;
     border-color: #252529;
     border-width: 3px;
     border-style: solid;
-
+    
 }
 
-.pagamento div:hover {
 
+.escolha-seu-filme:hover {
+    
     background-color: #0b0b0c;
     border-color: rgb(8, 138, 182);
     border-width: 3px;
     border-style: solid;
-    transform: scale(0.97);
+    transform: scale(0.98);
     transition: 0.2s;
     cursor: pointer;
-
+    
 }
 
 .botao-centralizar {
@@ -121,52 +117,4 @@ body {
     transition: 0.2s;
     cursor: pointer;
 
-}
-
-.select-filmes {
-
-    appearance: none;
-    outline: 0;
-    box-shadow: none;
-    border: 0;
-    background: #0b0b0c;
-    background-image: none;
-    font-size: 15px;
-
-}
-
-.escolha-seu-filme {
-
-    position: relative;
-    display: flex;
-    width: 400px;
-    height: 50px;
-    background: #0b0b0c;
-    border-radius: 15px;
-    border-color: #252529;
-    border-width: 3px;
-    border-style: solid;
-
-}
-
-.select-filmes {
-    
-    flex: 1;
-    padding: 10px;
-    color: white;
-    cursor: pointer;
-    border-radius: 15px;
-}
-
-.escolha-seu-filme:hover {
-    
-    background-color: #0b0b0c;
-    border-color: rgb(8, 138, 182);
-    border-width: 3px;
-    border-style: solid;
-    transform: scale(0.97);
-    transition: 0.2s;
-    cursor: pointer;
-    
-    
 }
