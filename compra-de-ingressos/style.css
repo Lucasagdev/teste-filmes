@@ -3,10 +3,11 @@ body {
 }
 
 body {
-    background-image: url(./imagens/fundo-preto-cinema.jpg);
-    background-size: cover;
+    background-color: black;
+    background-size: contain;
+    background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+
     color: white;
 }
 .filmes-em-cartaz {
@@ -15,22 +16,15 @@ body {
 
 }
 
-.escolha-seu-filme :hover {
-
-    background-color:deepskyblue;
-    color: white;
-    
-}
-
 .horarios div{
     
-    background: rgba(173, 110, 110, 0);
+    background: #0b0b0c;
     display: inline-block;
     color: white;
     padding: 20px;
     margin: 20px;
-    border-radius: 5px;
-    border-color: white;
+    border-radius: 15px;
+    border-color: #252529;
     border-width: 3px;
     border-style: solid;
      
@@ -38,22 +32,25 @@ body {
 
 .horarios div:hover {
     
-    background-color: rgba(0, 0, 0, 0.144);
-    border-color: aqua;
+    background-color: #0b0b0c;
+    border-color: rgb(8, 138, 182);
     border-width: 3px;
     border-style: solid;
+    transform: scale(0.97);
+    transition: 0.2s;
+    cursor: pointer;
 
 }
 
 .ingressos div {
     
-    background: rgba(173, 110, 110, 0);
+    background: #0b0b0c;
     display: inline-block;
     color: white;
     padding: 20px;
     margin: 20px;
-    border-radius: 5px;
-    border-color: white;
+    border-radius: 15px;
+    border-color: #252529;
     border-width: 3px;
     border-style: solid;
 
@@ -61,22 +58,25 @@ body {
 
 .ingressos div:hover {
 
-    background-color: rgba(0, 0, 0, 0.144);
-    border-color: aqua;
+    background-color: #0b0b0c;
+    border-color: rgb(8, 138, 182);
     border-width: 3px;
     border-style: solid;
+    transform: scale(0.97);
+    transition: 0.2s;
+    cursor: pointer;
 
 }
 
 .pagamento div {
 
-    background: rgba(173, 110, 110, 0);
+    background: #0b0b0c;
     display: inline-block;
     color: white;
     padding: 20px;
     margin: 20px;
-    border-radius: 5px;
-    border-color: white;
+    border-radius: 15px;
+    border-color: #252529;
     border-width: 3px;
     border-style: solid;
 
@@ -84,10 +84,13 @@ body {
 
 .pagamento div:hover {
 
-    background-color: rgba(0, 0, 0, 0.144);
-    border-color: aqua;
+    background-color: #0b0b0c;
+    border-color: rgb(8, 138, 182);
     border-width: 3px;
     border-style: solid;
+    transform: scale(0.97);
+    transition: 0.2s;
+    cursor: pointer;
 
 }
 
@@ -118,4 +121,52 @@ body {
     transition: 0.2s;
     cursor: pointer;
 
+}
+
+.select-filmes {
+
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0;
+    background: #0b0b0c;
+    background-image: none;
+    font-size: 15px;
+
+}
+
+.escolha-seu-filme {
+
+    position: relative;
+    display: flex;
+    width: 400px;
+    height: 50px;
+    background: #0b0b0c;
+    border-radius: 15px;
+    border-color: #252529;
+    border-width: 3px;
+    border-style: solid;
+
+}
+
+.select-filmes {
+    
+    flex: 1;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.escolha-seu-filme:hover {
+    
+    background-color: #0b0b0c;
+    border-color: rgb(8, 138, 182);
+    border-width: 3px;
+    border-style: solid;
+    transform: scale(0.97);
+    transition: 0.2s;
+    cursor: pointer;
+    
+    
 }
