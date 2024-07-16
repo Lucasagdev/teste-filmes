@@ -3,10 +3,9 @@ body {
 }
 
 body {
-    background-color: black;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+    
+    background: rgb(27,13,50);
+background: linear-gradient(235deg, rgba(27,13,50,1) 45%, rgba(0,0,0,1) 100%);
 
     color: white;
 }
@@ -33,7 +32,7 @@ body {
 .estilo-caixas div:hover {
 
     background-color: #0b0b0c;
-    border-color: rgb(8, 138, 182);
+    border-color: rgb(44, 31, 165);
     border-width: 3px;
     border-style: solid;
     transform: scale(0.95);
@@ -81,7 +80,7 @@ body {
 .escolha-seu-filme:hover {
     
     background-color: #0b0b0c;
-    border-color: rgb(8, 138, 182);
+    border-color: rgb(44, 31, 165);
     border-width: 3px;
     border-style: solid;
     transform: scale(0.98);
@@ -116,5 +115,18 @@ body {
     transform: scale(0.95);
     transition: 0.2s;
     cursor: pointer;
+    border-color: rgb(44, 31, 165);
 
+}
+
+.fa-linkedin {
+
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+
+.posicao-link {
+
+    text-align: center;
 }
