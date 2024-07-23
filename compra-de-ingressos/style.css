@@ -5,41 +5,112 @@ body {
 body {
     
     background: rgb(27,13,50);
-background: linear-gradient(235deg, rgba(27,13,50,1) 45%, rgba(0,0,0,1) 100%);
-
+    background: linear-gradient(235deg, rgba(27,13,50,1) 30%, rgba(0,0,0,1) 100%);
     color: white;
-}
-.filmes-em-cartaz {
-
-    list-style-image: url('./imagens/icone-filme.png');
-
 }
 
 .estilo-caixas div {
-
+    
     background: #0b0b0c;
     display: inline-block;
     color: white;
     padding: 13px;
     margin: 20px;
     border-radius: 20px;
-    border-color: #252529;
+    border-color: #09094d;
     border-width: 3px;
     border-style: solid;
     
 }
 
 .estilo-caixas div:hover {
-
-    background-color: #0b0b0c;
-    border-color: rgb(44, 31, 165);
+    
+    background-color: #09094d;
+    border-color: #09094d;
     border-width: 3px;
     border-style: solid;
     transform: scale(0.95);
     transition: 0.2s;
     cursor: pointer;
-
+    
 }
+
+.filmes-cartaz{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: left;
+}
+
+.filmes {
+    background-color: #0b0b0c7a;
+    display: flex; /* Usa flexbox para alinhar os itens */
+    align-items: center; /* Alinha verticalmente ao centro */
+    margin-bottom: 20px; /* Espaçamento opcional entre os cartões */
+    width: 700px;
+    border: 2px solid #09094d;
+    border-radius: 15px;
+    
+}
+
+.imagem {
+    margin-right: 20px; /* Espaçamento entre a imagem e o texto */
+    width: 350px; /* Largura da imagem (ajuste conforme necessário) */    
+    height: 450px; /* Altura automática para manter proporção */
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 13px;
+    
+}
+
+.filmes .informacoes {
+    align-items: center;
+    text-align: center;
+}
+
+.filmes .informacoes span {
+    display: block; /* Exibe spans como blocos para que fiquem empilhados verticalmente */
+}
+
+.filmes .generos {
+    list-style-type: none; /* Remove marcadores da lista */
+    padding: 0; /* Remove padding padrão da lista */
+    margin-top: 10px; /* Espaçamento opcional entre generos e descrição */
+}
+
+.filmes .generos li {
+    display: inline-block; /* Exibe generos lado a lado */
+    margin-right: 10px; /* Espaçamento entre generos */
+    padding: 5px 10px; /* Padding interno dos generos */
+    border-radius: 5px; /* Borda arredondada nos generos */
+    margin-bottom: 50px;
+}
+
+.filmes .sinopse {
+    margin-top: 20px; /* Espaçamento entre generos e descrição */
+    line-height: 1.5; /* Espaçamento entre linhas da descrição */
+    overflow-y:scroll;
+    font-size: 14px;
+    padding-right: 20px;
+    max-height: 160px;
+    text-align: justify;
+    margin: 10px;
+    
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ccc;
+    border-radius: 10px;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #09094d;
+    border-radius: 10px;
+    border: 3px solid #ccc;
+  }
 
 .select-filmes {
     
@@ -68,9 +139,9 @@ background: linear-gradient(235deg, rgba(27,13,50,1) 45%, rgba(0,0,0,1) 100%);
     display: flex;
     width: 400px;
     height: 50px;
-    background: #0b0b0c;
+    background: #09094d;
     border-radius: 15px;
-    border-color: #252529;
+    border-color:#09094d;
     border-width: 3px;
     border-style: solid;
     
@@ -79,22 +150,14 @@ background: linear-gradient(235deg, rgba(27,13,50,1) 45%, rgba(0,0,0,1) 100%);
 
 .escolha-seu-filme:hover {
     
-    background-color: #0b0b0c;
-    border-color: rgb(44, 31, 165);
+    background-color: #09094d;
+    border-color: #09094d;
     border-width: 3px;
     border-style: solid;
     transform: scale(0.98);
     transition: 0.2s;
     cursor: pointer;
     
-}
-
-.botao-centralizar {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
 }
 
 .botao-finalizar {
@@ -122,11 +185,28 @@ background: linear-gradient(235deg, rgba(27,13,50,1) 45%, rgba(0,0,0,1) 100%);
 .fa-linkedin {
 
     text-align: center;
-    color: white;
+    color: #7f7f8f;
     font-size: 50px;
+}
+
+.fa-linkedin:hover {
+
+    color: white;
+    transform: scale(0.95);
+    transition: 0.2s;
+    
 }
 
 .posicao-link {
 
     text-align: center;
+
+}
+
+.botao-centralizar {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
