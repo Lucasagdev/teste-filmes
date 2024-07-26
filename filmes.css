@@ -1,0 +1,75 @@
+.filmes-cartaz{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: left;
+}
+
+.filmes {
+    background-color: #0b0b0c7a;
+    display: flex; 
+    align-items: center;
+    margin-bottom: 20px; 
+    width: 500px;
+    border: 2px solid #09094d;
+    border-radius: 15px;
+    
+}
+
+.filmes:hover{
+    transform: scale(1.03);
+    transition: 1.20s;
+    background-color: #362164;
+
+}
+
+.imagem {
+    margin-right: 15px;
+    width: 250px;    
+    height: 350px; 
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 13px;
+    
+}
+
+.informacoes {
+    align-items: center;
+    text-align: center;
+    padding-right: 15px;
+}
+
+.filmes .informacoes span {
+    display: block;
+    background-color: rgb(21, 16, 53);
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.filmes .generos {
+    list-style-type: none; 
+    padding: 0; 
+    margin-top: 10px; 
+}
+
+.filmes .generos li {
+    display: inline-block; 
+    margin-right: 10px; 
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    margin-bottom: 10px;
+    background-color: #302e30a8;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.filmes .sinopse {
+    margin-top: 10px; 
+    line-height: 1.5; 
+    overflow-y:scroll;
+    font-size: 14px;
+    padding-right: 20px;
+    max-height: 160px;
+    text-align: left;
+    margin: 10px;
+    
+}

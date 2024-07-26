@@ -7,10 +7,11 @@ body {
     background: rgb(27,13,50);
     background: linear-gradient(235deg, rgba(27,13,50,1) 30%, rgba(0,0,0,1) 100%);
     color: white;
+    padding: 20px;
+    margin: 20px;
 }
 
 .estilo-caixas div {
-    
     background: #0b0b0c;
     display: inline-block;
     color: white;
@@ -25,7 +26,6 @@ body {
 }
 
 .estilo-caixas div:hover {
-    
     background-color: #09094d;
     border-color: #09094d;
     border-width: 3px;
@@ -40,92 +40,22 @@ body {
     cursor: pointer;
 }
 
-.filmes-cartaz{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: left;
-}
-
-.filmes {
-    background-color: #0b0b0c7a;
-    display: flex; 
-    align-items: center;
-    margin-bottom: 20px; 
-    width: 580px;
-    border: 2px solid #09094d;
-    border-radius: 15px;
-    
-}
-
-.imagem {
-    margin-right: 15px;
-    width: 250px;    
-    height: 350px; 
-    border-top-left-radius: 13px;
-    border-bottom-left-radius: 13px;
-    
-}
-
-.informacoes {
-    align-items: center;
-    text-align: center;
-    padding-right: 15px;
-}
-
-.filmes .informacoes span {
-    display: block;
-    background-color: rgb(21, 16, 53);
-    border-radius: 15px;
-    padding: 5px;
-}
-
-.filmes .generos {
-    list-style-type: none; 
-    padding: 0; 
-    margin-top: 10px; 
-}
-
-.filmes .generos li {
-    display: inline-block; 
-    margin-right: 10px; 
-    padding: 5px 10px; 
-    border-radius: 5px; 
-    margin-bottom: 10px;
-    background-color: #302e30a8;
-    border-radius: 15px;
-    padding: 5px;
-}
-
-.filmes .sinopse {
-    margin-top: 10px; 
-    line-height: 1.5; 
-    overflow-y:scroll;
-    font-size: 14px;
-    padding-right: 20px;
-    max-height: 160px;
-    text-align: justify;
-    margin: 10px;
-    
-}
-
 ::-webkit-scrollbar {
     width: 12px;
-  }
+}
 
-  *::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     background: #ccc;
     border-radius: 10px;
-  }
+}
 
-  *::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background-color: #09094d;
     border-radius: 10px;
     border: 3px solid #ccc;
-  }
+}
 
 .select-filmes {
-    
     appearance: none;
     outline: 0;
     box-shadow: none;
@@ -137,16 +67,15 @@ body {
 }
 
 .select-filmes {
-    
     flex: 1;
     padding: 10px;
     color: white;
     cursor: pointer;
     border-radius: 15px;
+    
 }
 
 .escolha-seu-filme {
-    
     position: relative;
     display: flex;
     width: 400px;
@@ -156,29 +85,17 @@ body {
     border-color:#09094d;
     border-width: 3px;
     border-style: solid;
-    
-}
-
-
-.escolha-seu-filme:hover {
-    
-    background-color: #09094d;
-    border-color: #09094d;
-    border-width: 3px;
-    border-style: solid;
-    transform: scale(0.98);
-    transition: 0.2s;
+    margin: 20px;
     cursor: pointer;
     
 }
 
 .botao-finalizar {
-
     background: #3423A6;
     color: white;
     padding: 20px;
     margin: 20px;
-    border-radius: 20px;
+    border-radius: 20em;
     border-color: rgb(199, 195, 195);
     border-width: 3px;
     border-style: solid;
@@ -186,7 +103,6 @@ body {
 }
 
 .botao-finalizar:hover {
-
     transform: scale(0.95);
     transition: 0.2s;
     cursor: pointer;
@@ -195,14 +111,13 @@ body {
 }
 
 .fa-linkedin {
-
     text-align: center;
     color: #7f7f8f;
     font-size: 50px;
+
 }
 
 .fa-linkedin:hover {
-
     color: white;
     transform: scale(0.95);
     transition: 0.2s;
@@ -210,15 +125,40 @@ body {
 }
 
 .posicao-link {
-
     text-align: center;
 
 }
 
 .botao-centralizar {
-
     display: flex;
     justify-content: center;
     align-items: center;
 
+}
+
+.ingressos .entradas{
+    display: inline-block;
+    padding-right: 30px;
+}
+
+.ingressos select{
+    height: 40px;
+    width: 60px;
+    background: #0b0b0c;
+    color: white;
+    border-radius: 0px;
+    border-color: #09094d;
+    border-width: 3px;
+    border-style: solid;
+    cursor: pointer;
+    padding: 5px;
+    
+}
+
+.entradas{
+    outline: none;
+}
+
+.ingressos span{
+    font-size: 15px;
 }
