@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Filmes no cinema</title>
+    <title>Meu Ticket</title>
 
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
 
@@ -15,9 +15,29 @@
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-</head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap" rel="stylesheet">
 
-<body>
+    </head>
+    
+    
+    
+    <body>
+    
+        <header>
+            <i class="fas fa-bars"></i>
+            
+           <img src="./imagens/marca-site.png" alt="marca">
+           
+           <i class="fas fa-users"></i>
+
+           
+        </header>
+
+    <main>
+
+    <h3 class="paragrafos" >Filmes em cartaz</h3>
 
     <ul class="filmes-cartaz">
         <li class="filmes">
@@ -66,7 +86,7 @@
                 <span>O Rei Leão</span>
             
                 <ul class="generos">
-                    <li class="tipo infantil">Comedia</li>
+                    <li class="tipo infantil">Infantil</li>
                     <li class="tipo musical">Musical</li>
                 </ul>
             
@@ -117,6 +137,23 @@
                 </p>
             </div>
         </li>
+        
+        <li class="filmes">
+            <img src="./imagens/Titanic_poster.jpg" class="imagem" alt="Titanic">
+        
+            <div class="informacoes">
+
+                <span>Titanic</span>
+            
+                <ul class="generos">
+                    <li class="tipo romance">Romance</li>
+                    <li class="tipo aventura">Aventura</li>
+                </ul>
+            
+                <p class="sinopse">Um artista pobre e uma jovem rica se conhecem e se apaixonam na fatídica viagem inaugural do Titanic em 1912. Embora esteja noiva do arrogante herdeiro de uma siderúrgica, a jovem desafia sua família e amigos em busca do verdadeiro amor.
+                </p>
+            </div>
+        </li>
     </ul>
 
     <h3 class="paragrafos">Escolha seu filme</h3>
@@ -137,7 +174,7 @@
 
     </div>
 
-    <h3 class="paragrafos">Horários disponíveis:</h3>
+    <h3 class="paragrafos">Horários disponíveis</h3>
 
 
     
@@ -177,7 +214,7 @@
 
     <div class="ingressos">
 
-        <span>inteiras</span>
+        <span>Inteiras</span>
         <div class="entradas">
             
             <label class="inteiras"></label>
@@ -200,7 +237,7 @@
 
         </div>
 
-        <span>meias</span>
+        <span>Meias</span>
         <div class="entradas">
 
             <label class="meias"></label>
@@ -237,7 +274,7 @@
 
         <div>
 
-            <label for="debito">Debito</label>
+            <label for="debito">Débito</label>
             <input id="debito" type="radio" name="pagamento">
 
         </div>
@@ -250,6 +287,8 @@
         </div>
 
     </div>
+
+</main>
 
     <div class="botao-centralizar">
 
@@ -267,6 +306,8 @@
             <h2>Me siga para mais atualizações!</h2>
             
             <a href="https://www.linkedin.com/in/lucas-gomes-dev01/" target="_blank"><i class="fab fa-linkedin"></i></a>
+
+            <a href="https://github.com/Lucasagdev" target="_blank"><i class="fab fa-github"></i></a>
             
         </div>
         

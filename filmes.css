@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: left;
+    justify-content: space-around;
 }
 
 .filmes {
@@ -17,7 +17,7 @@
 }
 
 .filmes:hover{
-    transform: scale(1.03);
+    transform: scale(1.09);
     transition: 1.20s;
     background-color: #362164;
 
@@ -57,7 +57,6 @@
     padding: 5px 10px; 
     border-radius: 5px; 
     margin-bottom: 10px;
-    background-color: #302e30a8;
     border-radius: 15px;
     padding: 5px;
 }
@@ -72,4 +71,40 @@
     text-align: left;
     margin: 10px;
     
+}
+
+.guerra{
+    background-color: #642121;
+}
+
+.drama{
+    background-color: #3a3235;
+}
+
+.comedia{
+    background-color: #d8ce47;
+}
+
+.infantil{
+    background-color: #1cc3c9;
+}
+
+.musical{
+    background-color: #be4f5e;
+}
+
+.fantasia{
+    background-color: #460e52;
+}
+
+.aventura{
+    background-color: #2945c0;
+}
+
+.crime{
+    background-color: #17244d;
+}
+
+.romance{
+    background-color: #a533c2;
 }

@@ -1,15 +1,61 @@
-body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+*{
+    font-family: Poppins;
+    margin: 0;
+    
+}
+
+header{
+    background: rgb(77,25,145);
+background: linear-gradient(180deg, rgba(77,25,145,1) 0%, rgb(27,13,50) 100%);
+}
+
+header{
+    width: 100%;
+    height: 120px;
+    position: absolute;
+    top: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;  
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img{
+    height: 80px;
+    margin: auto;
+    
+}
+
+header .fa-bars, .fa-users{
+    padding: 50px;
+    font-size: 30px;
+}
+
+header .fa-bars:hover, .fa-users:hover{
+    transform: scale(0.95);
+    transition: 0.2s;
+    cursor: pointer;
 }
 
 body {
-    
     background: rgb(27,13,50);
     background: linear-gradient(235deg, rgba(27,13,50,1) 30%, rgba(0,0,0,1) 100%);
     color: white;
-    padding: 20px;
-    margin: 20px;
+    padding-top: 140px;
+
 }
+
+.paragrafos{
+    margin: 40px;
+    padding: 15px;
+    border: 3px solid #201142;
+    border-radius: 5em;
+    width: max-content;
+    height: 30px;
+}
+
+
 
 .estilo-caixas div {
     background: #0b0b0c;
@@ -60,10 +106,12 @@ body {
     outline: 0;
     box-shadow: none;
     border: 0;
-    background: #0b0b0c;
-    background-image: none;
+    background-color: #0b0b0c;
+    background-image: url('./imagens/imagem_2024-07-27_134620966-removebg-preview.png');
+    background-repeat: no-repeat;
+    background-position: right center;
     font-size: 15px;
-    
+    padding-right: 0%;
 }
 
 .select-filmes {
@@ -110,14 +158,15 @@ body {
 
 }
 
-.fa-linkedin {
+.fa-linkedin, .fa-github {
     text-align: center;
     color: #7f7f8f;
     font-size: 50px;
-
+    margin-right: 20px;
+    padding-top: 15px;
 }
 
-.fa-linkedin:hover {
+.fa-linkedin:hover, .fa-github:hover {
     color: white;
     transform: scale(0.95);
     transition: 0.2s;
@@ -126,7 +175,7 @@ body {
 
 .posicao-link {
     text-align: center;
-
+    padding-bottom: 30px;
 }
 
 .botao-centralizar {
@@ -136,29 +185,59 @@ body {
 
 }
 
-.ingressos .entradas{
-    display: inline-block;
-    padding-right: 30px;
-}
-
-.ingressos select{
-    height: 40px;
-    width: 60px;
-    background: #0b0b0c;
-    color: white;
-    border-radius: 0px;
-    border-color: #09094d;
-    border-width: 3px;
-    border-style: solid;
-    cursor: pointer;
-    padding: 5px;
+.ingressos {
+    margin: 15px;
     
 }
 
-.entradas{
-    outline: none;
+.ingressos .entradas {
+    display: inline-block;
+    padding-right: 30px;
+    vertical-align: middle; 
 }
 
-.ingressos span{
-    font-size: 15px;
+.ingressos select {
+    height: 55px; 
+    width: 60px;
+    background: #0b0b0c;
+    color: white;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-color: #09094d;
+    border-width: 3px;
+    border-style: solid;
+    padding: 10px;
+    outline: none;
+    font-size: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url('./imagens/favicon-32x32.png') no-repeat right center;
+}
+
+.ingressos span {
+    display: inline-block; 
+    height: 23px; 
+    padding: 13px;
+    margin: 5px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-color: #09094d;
+    border-width: 3px;
+    border-style: solid;
+    vertical-align: middle; 
+}
+
+.ingressos select:hover {
+    background-color: #09094d;
+    border-color: #09094d;
+    border-width: 3px;
+    border-style: solid;
+    transform: scale(0.95);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.ingressos option{
+    background-color: #0b0b0c;
 }
