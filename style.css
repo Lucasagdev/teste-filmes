@@ -1,7 +1,6 @@
 *{
-    font-family: Poppins;
+    font-family: Poppins; 
     margin: 0;
-    
 }
 
 header{
@@ -11,7 +10,7 @@ background: linear-gradient(180deg, rgba(77,25,145,1) 0%, rgb(27,13,50) 100%);
 
 header{
     width: 100%;
-    height: 120px;
+    height: 140px;
     position: absolute;
     top: 0;
     padding: 20px;
@@ -24,7 +23,6 @@ header{
 header img{
     height: 80px;
     margin: auto;
-    
 }
 
 header .fa-bars, .fa-users{
@@ -42,34 +40,57 @@ body {
     background: rgb(27,13,50);
     background: linear-gradient(235deg, rgba(27,13,50,1) 30%, rgba(0,0,0,1) 100%);
     color: white;
-    padding-top: 140px;
-
+    padding-top: 160px;
 }
 
 .paragrafos{
     margin: 40px;
     padding: 15px;
-    border: 3px solid #201142;
+    border: 3px solid #3b2275;
     border-radius: 5em;
     width: max-content;
     height: 30px;
 }
 
+.pagamento, .horarios{
+    padding-left: 20px;
+}
 
+.estilo-caixas {
+    display: flex;
+    gap: 30px;
+}
 
 .estilo-caixas div {
     background: #0b0b0c;
-    display: inline-block;
-    color: white;
-    padding: 13px;
-    margin: 20px;
+    padding: 0px;
+    border: 3px solid #13298b;
     border-radius: 20px;
-    border-color: #09094d;
-    border-width: 3px;
-    border-style: solid;
-    cursor: pointer
-    
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s;
 }
+
+.estilo-caixas input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.estilo-caixas input[type="radio"]:checked ~ label {
+    background-color: #13298b;
+    color: white;
+}
+
+.estilo-caixas label {
+    display: block;
+    padding: 15px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 15px;
+    transition: background-color 0.4s, color 0.4s;
+}
+
 
 .estilo-caixas div:hover {
     background-color: #09094d;
@@ -79,39 +100,22 @@ body {
     transform: scale(0.95);
     transition: 0.2s;
     cursor: pointer;
-    
 }
 
 .estilo-caixas label{
     cursor: pointer;
-}
-
-::-webkit-scrollbar {
-    width: 12px;
-}
-
-::-webkit-scrollbar-track {
-    background: #ccc;
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: #09094d;
-    border-radius: 10px;
-    border: 3px solid #ccc;
-}
+} 
 
 .select-filmes {
     appearance: none;
-    outline: 0;
+    outline: none;
     box-shadow: none;
     border: 0;
     background-color: #0b0b0c;
-    background-image: url('./imagens/imagem_2024-07-27_134620966-removebg-preview.png');
+    background-image: url('./imagens/seta-64x33.png');
     background-repeat: no-repeat;
     background-position: right center;
     font-size: 15px;
-    padding-right: 0%;
 }
 
 .select-filmes {
@@ -120,7 +124,6 @@ body {
     color: white;
     cursor: pointer;
     border-radius: 15px;
-    
 }
 
 .escolha-seu-filme {
@@ -128,66 +131,16 @@ body {
     display: flex;
     width: 400px;
     height: 50px;
-    background: #09094d;
+    margin: 20px;
+    border-color:#13298b;
     border-radius: 15px;
-    border-color:#09094d;
     border-width: 3px;
     border-style: solid;
-    margin: 20px;
     cursor: pointer;
-    
-}
-
-.botao-finalizar {
-    background: #3423A6;
-    color: white;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 20em;
-    border-color: rgb(199, 195, 195);
-    border-width: 3px;
-    border-style: solid;
-    
-}
-
-.botao-finalizar:hover {
-    transform: scale(0.95);
-    transition: 0.2s;
-    cursor: pointer;
-    border-color: rgb(44, 31, 165);
-
-}
-
-.fa-linkedin, .fa-github {
-    text-align: center;
-    color: #7f7f8f;
-    font-size: 50px;
-    margin-right: 20px;
-    padding-top: 15px;
-}
-
-.fa-linkedin:hover, .fa-github:hover {
-    color: white;
-    transform: scale(0.95);
-    transition: 0.2s;
-    
-}
-
-.posicao-link {
-    text-align: center;
-    padding-bottom: 30px;
-}
-
-.botao-centralizar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
 }
 
 .ingressos {
     margin: 15px;
-    
 }
 
 .ingressos .entradas {
@@ -197,22 +150,24 @@ body {
 }
 
 .ingressos select {
-    height: 55px; 
-    width: 60px;
     background: #0b0b0c;
     color: white;
+    height: 55px; 
+    width: 60px;
+    padding: 10px;
+
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    border-color: #09094d;
-    border-width: 3px;
-    border-style: solid;
-    padding: 10px;
-    outline: none;
+    border: 3px solid #13298b;
+    
     font-size: 20px;
+    outline: none;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background: url('./imagens/favicon-32x32.png') no-repeat right center;
+    background-image: url('./imagens/seta-32x32.png') ;
+    background-repeat: no-repeat;
+    background-position: right center;
 }
 
 .ingressos span {
@@ -220,19 +175,14 @@ body {
     height: 23px; 
     padding: 13px;
     margin: 5px;
+    border: 3px solid #13298b;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    border-color: #09094d;
-    border-width: 3px;
-    border-style: solid;
     vertical-align: middle; 
 }
 
 .ingressos select:hover {
-    background-color: #09094d;
-    border-color: #09094d;
-    border-width: 3px;
-    border-style: solid;
+    background-color: #13298b;
     transform: scale(0.95);
     transition: 0.2s;
     cursor: pointer;
@@ -240,4 +190,46 @@ body {
 
 .ingressos option{
     background-color: #0b0b0c;
+}
+
+.botao-finalizar {
+    background: #3423A6;
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    border-color: rgb(199, 195, 195);
+    border-radius: 20em;
+    border-width: 3px;
+    border-style: solid;
+}
+
+.botao-centralizar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao-finalizar:hover {
+    border-color: rgb(44, 31, 165);
+    transform: scale(0.95);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.fa-linkedin, .fa-github {
+    color: #7f7f8f;
+    font-size: 50px;
+    margin-right: 20px;
+    padding-top: 15px;
+}
+
+.posicao-link {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.fa-linkedin:hover, .fa-github:hover {
+    color: white;
+    transform: scale(0.95);
+    transition: 0.2s;
 }
